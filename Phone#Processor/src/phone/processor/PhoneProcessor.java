@@ -24,7 +24,7 @@ public class PhoneProcessor {
         Scanner sc = new Scanner(System.in);
         Matcher match;
         System.out.println("Please input a phone number to validate");
-        String userIn = "419.123.4564";//sc.next();
+        String userIn = sc.next();
         Pattern validPhoneNum = Pattern.compile("(\\([0-9]{3}\\)[0-9]{3}-[0-9]{4})|([0-9]{3}-[0-9]{3}-[0-9]{4})|([0-9]{3}\\.[0-9]{3}\\.[0-9]{4})|(\\([0-9]{3}\\)" + space + "[0-9]{3}-[0-9]{4})");
         match = validPhoneNum.matcher(userIn);
         //four or statements for the pattern. first, its sees if any pass. then it 
